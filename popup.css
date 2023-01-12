@@ -1,0 +1,23 @@
+body {
+  border: 5px solid pink;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.parentClass {
+  width: 270px;
+  padding-bottom: 10px;
+}
+
+.parentClass lable {
+  width: 100px;
+}
+
+.parentClass select {
+  width: 150px;
+}
+
+.Timezones {
+  height: 10px;
+}

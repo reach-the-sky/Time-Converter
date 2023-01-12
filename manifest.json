@@ -1,0 +1,21 @@
+{
+  "name": "Time Converter",
+  "version": "1.0.0",
+  "description": "Convertes time from one time zone to other",
+  "manifest_version": 3,
+  "author": "Krishna Kotni",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Time Converter"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "permissions": ["storage", "notifications", "contextMenus", "<all_urls>"]
+}
