@@ -4,6 +4,12 @@
   "description": "Convertes time from one time zone to other",
   "manifest_version": 3,
   "author": "Krishna Kotni",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_title": "Time Converter"
