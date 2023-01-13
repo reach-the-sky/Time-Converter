@@ -238,6 +238,7 @@ function chromeNotification(message) {
     iconUrl: "icon.png",
     title: "Converted Time",
     message: message,
+    silent: true
   };
   chrome.notifications.create(notifOptions);
 }

@@ -23,5 +23,5 @@
       "matches": ["http://*/*", "https://*/*"]
     }
   ],
-  "permissions": ["storage", "notifications", "contextMenus", "<all_urls>"]
+  "permissions": ["storage", "notifications", "contextMenus"]
 }

@@ -201,10 +201,6 @@ worldTimeZones = {
   
 var userSavedTimezoneFrom, userSavedTimezoneTo;
 
-// chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-//   chrome.tabs.sendMessage(tabs[0].id, { type: "changeTime", timeZone: "UTC" });
-// });
-
 // add timezones
 function addTimezones() {
   var selectFrom = document.getElementById("TimezonesFrom");
@@ -234,7 +230,6 @@ chrome.storage.sync.get(["timezoneFrom", "timezoneTo"], (zone) => {
 });
 
 function saveTimezone() {
-  console.log("saveTimezone");
   var selectFrom = document.getElementById("TimezonesFrom");
   var selectTo = document.getElementById("TimezonesTo");
   chrome.storage.sync.set({
