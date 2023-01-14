@@ -272,6 +272,7 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
       } 
       else {
         message = convertTimezone(clickData.selectionText);
+        chrome.action.setBadgeText({"text": message});
       }
       chromeNotification(message);
     });
